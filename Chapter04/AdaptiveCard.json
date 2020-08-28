@@ -1,0 +1,60 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Customer Follow-up"
+    },
+    {
+      "type": "TextBlock",
+      "text": "{$root.customer}",
+      "wrap": true,
+      "weight": "Bolder"
+    },
+    {
+      "text": "Responded our survey with the following details:",
+      "type": "TextBlock"
+    },
+    {
+      "type": "TextBlock",
+      "text": "How did you first learn about our services?",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "{$root.services}"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Please describe the main reasons you selected our services",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "{$root.reasons}"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Overall rating of our services",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "{$root.rating}"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Follow-up"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Skip"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}
