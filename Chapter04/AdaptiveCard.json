@@ -42,7 +42,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "{$root.rating}"
+      "text": "{$root.rating} stars"
     }
   ],
   "actions": [
@@ -52,7 +52,7 @@
     },
     {
       "type": "Action.Submit",
-      "title": "Skip"
+      "title": "Discard"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
