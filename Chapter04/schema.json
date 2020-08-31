@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "odata.metadata": {
+      "type": "string"
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "odata.type": {
+            "type": "string"
+          },
+          "odata.id": {
+            "type": "string"
+          },
+          "odata.etag": {
+            "type": "string"
+          },
+          "odata.editLink": {
+            "type": "string"
+          },
+          "Title": {
+            "type": "string"
+          },
+          "Department": {
+            "type": "string"
+          }
+        },
+        "required": ["odata.type", "odata.id", "odata.etag", "odata.editLink", "Title", "Department"]
+      }
+    }
+  }
+}
