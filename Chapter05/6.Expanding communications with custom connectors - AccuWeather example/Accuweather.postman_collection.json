@@ -1,0 +1,193 @@
+{
+	"id": "4f52d101-c67a-4664-9872-1f19c890bbbe",
+	"name": "Accuweather",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"04d6234d-bad3-4a38-87c3-db727ad70e82"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "04d6234d-bad3-4a38-87c3-db727ad70e82",
+			"name": "City Search",
+			"url": "http://dataservice.accuweather.com/locations/v1/cities/search?apikey&q",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "apikey",
+					"value": null,
+					"equals": false,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "q",
+					"value": null,
+					"equals": false,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "ea2cead0-0e1c-43ef-b99a-73dd5033463e",
+					"name": "City Search",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "[\n    {\n        \"Version\": 1,\n        \"Key\": \"55071\",\n        \"Type\": \"City\",\n        \"Rank\": 35,\n        \"LocalizedName\": \"Mississauga\",\n        \"EnglishName\": \"Mississauga\",\n        \"PrimaryPostalCode\": \"L5B\",\n        \"Region\": {\n            \"ID\": \"NAM\",\n            \"LocalizedName\": \"North America\",\n            \"EnglishName\": \"North America\"\n        },\n        \"Country\": {\n            \"ID\": \"CA\",\n            \"LocalizedName\": \"Canada\",\n            \"EnglishName\": \"Canada\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"ON\",\n            \"LocalizedName\": \"Ontario\",\n            \"EnglishName\": \"Ontario\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"CA\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"EDT\",\n            \"Name\": \"America/Toronto\",\n            \"GmtOffset\": -4,\n            \"IsDaylightSaving\": true,\n            \"NextOffsetChange\": \"2020-11-01T06:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 43.58,\n            \"Longitude\": -79.616,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 113,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 370,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [\n            {\n                \"Level\": 2,\n                \"LocalizedName\": \"Peel\",\n                \"EnglishName\": \"Peel\"\n            }\n        ],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    }\n]",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"dataOptions": null,
+						"headerData": [],
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "apikey",
+								"value": "k9b9Ob9DRhIBn3GGU5UsTVnNDKJgRFUz",
+								"equals": true,
+								"description": null,
+								"enabled": true
+							},
+							{
+								"key": "q",
+								"value": "Mississauga",
+								"equals": true,
+								"description": null,
+								"enabled": true
+							}
+						],
+						"url": "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=k9b9Ob9DRhIBn3GGU5UsTVnNDKJgRFUz&q=Mississauga"
+					},
+					"headers": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Sep 2020 22:20:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "RateLimit-Limit",
+							"value": "50"
+						},
+						{
+							"key": "RateLimit-Remaining",
+							"value": "41"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, x-requested-with, accept"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Fri, 18 Sep 2020 21:49:19 GMT"
+						},
+						{
+							"key": "Accept",
+							"value": "*/*"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "deflate"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Host",
+							"value": "api.accuweather.com"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "a945c6af-59bd-4a26-b379-cde4352fa9de"
+						},
+						{
+							"key": "User-Agent",
+							"value": "PostmanRuntime/7.26.3"
+						},
+						{
+							"key": "X-Forwarded-For",
+							"value": "85.155.127.77"
+						},
+						{
+							"key": "X-Forwarded-Port",
+							"value": "80"
+						},
+						{
+							"key": "X-Forwarded-Proto",
+							"value": "http"
+						}
+					],
+					"cookies": null,
+					"request": "04d6234d-bad3-4a38-87c3-db727ad70e82",
+					"collection": "4f52d101-c67a-4664-9872-1f19c890bbbe"
+				}
+			],
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
