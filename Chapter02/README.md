@@ -1,3 +1,6 @@
+# PowerApps-Cookbook
+Chapter 02 material, published by Packt
+
 # AMPI Help desk
 Use the provided package to import this solution into your environment.
 
