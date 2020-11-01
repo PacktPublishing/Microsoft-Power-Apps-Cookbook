@@ -6,7 +6,7 @@ SELECT dbo.tickets.customer_id,
        technicians.full_name AS Technician,
        ticket_status.description AS Status,
        ticket_priority.description AS Priority
-FROM production.dbo.tickets
+FROM dbo.tickets
     INNER JOIN dbo.customers
         ON customers.id = tickets.customer_id
     INNER JOIN dbo.ticket_status
