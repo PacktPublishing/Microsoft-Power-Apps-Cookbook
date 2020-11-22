@@ -1,0 +1,21 @@
+If(
+    !IsBlank(Param("groupId")) && Param("groupId") <> "{groupId}",
+    ClearCollect(
+        channels,
+        MicrosoftTeams.GetChannelsForGroup(Param("groupId")).value
+    );
+    ClearCollect(
+        channelData,
+        ForAll(
+            channels,
+            {
+                id: ThisRecord.id,
+                displayName: ThisRecord.displayName,
+                messageCount: MicrosoftTeams.GetMessagesFromChannel(
+                    Param("groupId"),
+                    ThisRecord.id
+                )
+            }
+        )
+    )
+)

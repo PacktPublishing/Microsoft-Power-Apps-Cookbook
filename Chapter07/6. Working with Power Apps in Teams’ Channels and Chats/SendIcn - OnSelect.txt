@@ -1,0 +1,14 @@
+If(
+    Len(MessageSubjectTxt.Text) > 0 && Len(MessageBodyTxt.Text) > 0,
+    MicrosoftTeams.PostMessageToChannelV3(
+        Param("groupId"),
+        ChannelGly.Selected.id,
+        {
+            content: MessageBodyTxt.Text,
+            contentType: "text"
+        },
+        {subject: MessageSubjectTxt.Text}
+    );
+    UpdateContext({confirmationVisible: true});
+    Select(RefreshIcn)
+)

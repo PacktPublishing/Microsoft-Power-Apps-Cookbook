@@ -1,0 +1,30 @@
+Set(
+    ThemeDefault,
+    {
+        MainColor: ColorValue("#464775"),
+        Background: ColorValue("#FFFFFF"),
+        BackgroundAlt: ColorValue("#F3F2F1"),
+        TextPrimary: ColorValue("#252423"),
+        TextSecondary: ColorValue("#484644"),
+        Divider: ColorValue("#494848")
+    }
+);
+Set(
+    ThemeDark,
+    {
+        MainColor: ColorValue("#464775"),
+        Background: ColorValue("#2D2C2C"),
+        BackgroundAlt: ColorValue("#201F1F"),
+        TextPrimary: ColorValue("#FFFFFF"),
+        TextSecondary: ColorValue("#C8C6C4"),
+        Divider: ColorValue("#494848")
+    }
+);
+Set(
+    CurrentTheme,
+    If(
+        Param("theme") = "default",
+        ThemeDefault,
+        ThemeDark
+    )
+)
