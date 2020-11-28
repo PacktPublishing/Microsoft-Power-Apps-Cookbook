@@ -1,0 +1,10 @@
+{
+  "displayName": "Recipe App",
+  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/<TEAMS_APP_ID>",
+  "configuration": {
+    "entityId": "<POWERAPPS_APP_ID>",
+    "contentUrl": "https://apps.powerapps.com/play/providers/Microsoft.PowerApps/apps/<POWERAPPS_APP_ID>?source=teamstab&locale={locale}&channelId={channelId}&channelType={channelType}&chatId={chatId}&groupId={groupId}&hostClientType={hostClientType}&isFullScreen={isFullScreen}&subEntityId={subEntityId}&teamId={teamId}&teamType={teamType}&theme={theme}&userTeamRole={userTeamRole}",
+    "websiteUrl": "https://apps.powerapps.com/play/providers/Microsoft.PowerApps/apps/<POWERAPPS_APP_ID>?source=teamsopenwebsite",
+    "removeUrl": null
+  }
+}
