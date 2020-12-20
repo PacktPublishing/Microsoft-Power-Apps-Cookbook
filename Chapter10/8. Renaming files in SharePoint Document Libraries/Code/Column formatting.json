@@ -1,0 +1,67 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "children": [
+      {
+        "elmType": "button",
+        "txtContent": "@currentField",
+        "customRowAction": {
+          "action": "defaultClick"
+        },
+        "attributes": {
+          "class": "ms-fontWeight-normal ms-fontSize-14"
+        },
+        "style": {
+          "padding-right": "30px",
+          "border": "0px solid",
+          "background-color": "transparent",
+          "cursor": "pointer"
+        }
+      },
+      {
+        "elmType": "button",
+        "customRowAction": {
+          "action": "executeFlow",
+          "actionParams": "{\"id\": \"<FLOW_ID>\"}"
+        },
+        "attributes": {
+          "class": "ms-depth-4"
+        },
+        "style": {
+          "color": "#3C3C3C",
+          "cursor": "pointer",
+          "display": "=if([$File_x0020_Type] == '', 'inherit', 'none')",
+          "background-color": "#F8F8F8",
+          "margin-left": "auto"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "span",
+                "attributes": {
+                  "iconName": "SaveAs",
+                  "class": "ms-font-l"
+                },
+                "style": {
+                  "padding-right": "6px"
+                }
+              },
+              {
+                "elmType": "span",
+                "txtContent": "Rename all",
+                "attributes": {
+                  "class": "ms-font-sm"
+                },
+                "style": {
+                  "line-height": "1",
+                  "vertical-align": "text-top"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

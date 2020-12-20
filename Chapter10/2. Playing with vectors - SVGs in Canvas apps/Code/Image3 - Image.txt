@@ -1,0 +1,5 @@
+"data:image/svg+xml," & EncodeUrl("
+<svg xmlns='http://www.w3.org/2000/svg'>
+    <text x='20' y='70' style='font-family: Segoe UI; font-size: 72; font-weight: 600; text-shadow: 4px 4px 0px #511B5190; fill: #511B51AA;'>" & Label1.Text & "</text>
+</svg>
+")

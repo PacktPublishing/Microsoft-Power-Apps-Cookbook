@@ -1,0 +1,23 @@
+ClearCollect(
+    ExcelDataCol,
+    ForAll(
+        Split(
+            Substitute(
+                GetdatafromFlow.Run().data,
+                "\",
+                ""
+            ),
+            ";"
+        ),
+        With(
+            Match(
+                Result,
+                "\{\""fullName\""\:\""(?:(?<fullname>.*))\""\,\""email\""\:\""(?:(?<email>.*))\""\}"
+            ),
+            {
+                FullName: fullname,
+                Email: email
+            }
+        )
+    )
+)
