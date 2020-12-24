@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="AMPICurrents" constructor="FontAwesomeComponent" version="0.0.1" display-name-key="FontAwesomeComponent" description-key=" Font Awesome loader" control-type="standard">
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="FontAwesome_KitURL" display-name-key="FontAwesome_KitURL_Display_Key" description-key="FontAwesome_KitURL_Desc_Key" of-type="SingleLine.URL" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
