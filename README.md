@@ -57,3 +57,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 He is a team lead of the Business Apps department and oversees all projects related to Microsoft 365, Power Platform, and web development.
 He has contributed to significant community events, such as the Power Platform World Tour, Global Azure Bootcamp, Microsoft 365 Developer Bootcamp, and Dynamics 365 Saturdays in recent years.
 Eickhel also coordinates the TenerifeDev and Power Platform Canarias user groups with a group of like-minded developers eager to share their knowledge in different technologies.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800569553">https://packt.link/free-ebook/9781800569553 </a> </p>
